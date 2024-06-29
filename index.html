@@ -82,7 +82,10 @@
             text-align: center;
             padding: 120px 0 60px;
             background-color: var(--apple-light-gray);
-            color: #1d1d1f;
+            background-image: url('https://example.com/images/cute-duck-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
         }
 
         h1 {
@@ -122,40 +125,20 @@
             text-align: center;
         }
 
-        .product-card {
-            background-color: #fff;
-            border-radius: 18px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            max-width: 300px;
-            margin: 0 auto;
-        }
-
-        .product-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-        }
-
         .product-image {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
 
-        .product-info {
-            padding: 20px;
-        }
-
-        .product-title {
-            font-size: 24px;
-            font-weight: 500;
-            margin-bottom: 10px;
+        .product-details {
+            text-align: left;
         }
 
         .product-price {
-            font-size: 18px;
-            color: var(--apple-gray);
+            font-size: 24px;
+            color: var(--apple-blue);
             margin-bottom: 15px;
         }
 
@@ -164,9 +147,9 @@
             background-color: var(--apple-blue);
             color: #fff;
             text-decoration: none;
-            padding: 8px 16px;
+            padding: 12px 24px;
             border-radius: 980px;
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 500;
             transition: all 0.3s ease;
         }
@@ -182,15 +165,6 @@
             padding: 20px;
             font-size: 12px;
         }
-
-        .description {
-            max-width: 700px;
-            margin: 40px auto;
-            text-align: left;
-            font-size: 18px;
-            line-height: 1.6;
-            color: #333;
-        }
     </style>
 </head>
 <body>
@@ -198,10 +172,10 @@
         <nav>
             <div class="logo">3D Print Wonders</div>
             <ul>
-                <li><a href="index.html#featured">Featured</a></li>
-                <li><a href="index.html#categories">Categories</a></li>
-                <li><a href="index.html#custom">Custom Orders</a></li>
-                <li><a href="index.html#upload">Upload STL</a></li>
+                <li><a href="/#featured">Home</a></li>
+                <li><a href="/#categories">Categories</a></li>
+                <li><a href="/#custom">Custom Orders</a></li>
+                <li><a href="/#upload">Upload STL</a></li>
             </ul>
         </nav>
     </header>
@@ -210,30 +184,17 @@
         <section class="hero">
             <div class="container">
                 <h1>Cute Duck</h1>
-                <p>This adorable 3D printed duck is perfect for decorating your desk, gifting, or simply enjoying as a fun collectible.</p>
             </div>
         </section>
 
         <section class="section">
             <div class="container">
-                <div class="product-card">
-                    <img src="https://example.com/images/cute-duck.jpg" alt="Cute Duck" class="product-image">
-                    <div class="product-info">
-                        <h3 class="product-title">Cute Duck</h3>
-                        <p class="product-price">$1.99</p>
-                        <a href="#" class="cta">Place an order</a>
-                    </div>
-                </div>
-                <div class="description">
-                    <h2>Product Description</h2>
-                    <p>The Cute Duck is a delightful addition to any 3D printed collection. Made with high-quality materials, this charming duck is both durable and incredibly detailed. Whether you're a fan of whimsical designs or looking for a unique gift, the Cute Duck is sure to bring a smile to your face.</p>
-                    <p>Specifications:</p>
-                    <ul>
-                        <li>Material: PLA</li>
-                        <li>Height: 3 inches</li>
-                        <li>Width: 2.5 inches</li>
-                        <li>Available Colors: Yellow, Orange, White</li>
-                    </ul>
+                <img src="https://example.com/images/cute-duck.jpg" alt="Cute Duck" class="product-image">
+                <div class="product-details">
+                    <h2>About the Cute Duck</h2>
+                    <p>This adorable 3D printed duck is perfect for decorating your desk, gifting, or simply enjoying as a fun collectible. Made with high-quality PLA, this charming duck is both durable and incredibly detailed. Whether you're a fan of whimsical designs or looking for a unique gift, the Cute Duck is sure to bring a smile to your face.</p>
+                    <p class="product-price">$1.99</p>
+                    <a href="#" class="cta">Place an order</a>
                 </div>
             </div>
         </section>
@@ -244,4 +205,3 @@
     </footer>
 </body>
 </html>
-
