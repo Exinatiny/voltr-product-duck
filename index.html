@@ -1,1 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Duck - 3D Print Wonders</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600&display=swap');
+
+        :root {
+            --apple-gray: #86868b;
+            --apple-light-gray: #f5f5f7;
+            --apple-blue: #0071e3;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.47059;
+            font-weight: 400;
+            letter-spacing: -.022em;
+            background-color: #fff;
+            color: #1d1d1f;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: saturate(180%) blur(20px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 44px;
+            padding: 0 22px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav a {
+            color: #000;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--apple-blue);
+        }
+
+        .logo {
+            font-size: 21px;
+            font-weight: 500;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 120px 0 60px;
+            background-color: var(--apple-light-gray);
+            color: #1d1d1f;
+        }
+
+        h1 {
+            font-size: 56px;
+            line-height: 1.07143;
+            font-weight: 600;
+            letter-spacing: -.005em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 48px;
+            line-height: 1.08349;
+            font-weight: 600;
+            letter-spacing: -.003em;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 28px;
+            line-height: 1.14286;
+            font-weight: 500;
+            letter-spacing: .007em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 21px;
+            line-height: 1.381;
+            font-weight: 400;
+            letter-spacing: .011em;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-title {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 18px;
+            color: var(--apple-gray);
+            margin-bottom: 15px;
+        }
+
+        .cta {
+            display: inline-block;
+            background-color: var(--apple-blue);
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 980px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .cta:hover {
+            background-color: #0077ed;
+        }
+
+        footer {
+            background-color: var(--apple-light-gray);
+            color: var(--apple-gray);
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+        }
+
+        .description {
+            max-width: 700px;
+            margin: 40px auto;
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">3D Print Wonders</div>
+            <ul>
+                <li><a href="index.html#featured">Featured</a></li>
+                <li><a href="index.html#categories">Categories</a></li>
+                <li><a href="index.html#custom">Custom Orders</a></li>
+                <li><a href="index.html#upload">Upload STL</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Cute Duck</h1>
+                <p>This adorable 3D printed duck is perfect for decorating your desk, gifting, or simply enjoying as a fun collectible.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="product-card">
+                    <img src="https://example.com/images/cute-duck.jpg" alt="Cute Duck" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Cute Duck</h3>
+                        <p class="product-price">$1.99</p>
+                        <a href="#" class="cta">Place an order</a>
+                    </div>
+                </div>
+                <div class="description">
+                    <h2>Product Description</h2>
+                    <p>The Cute Duck is a delightful addition to any 3D printed collection. Made with high-quality materials, this charming duck is both durable and incredibly detailed. Whether you're a fan of whimsical designs or looking for a unique gift, the Cute Duck is sure to bring a smile to your face.</p>
+                    <p>Specifications:</p>
+                    <ul>
+                        <li>Material: PLA</li>
+                        <li>Height: 3 inches</li>
+                        <li>Width: 2.5 inches</li>
+                        <li>Available Colors: Yellow, Orange, White</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 3D Print Wonders. All rights reserved.</p>
+    </footer>
+</body>
+</html>
 
